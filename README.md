@@ -71,3 +71,4 @@ POOL - Pooling Layer
 FNN - Fully Connected layer
 
 
+Image source : Google Images
