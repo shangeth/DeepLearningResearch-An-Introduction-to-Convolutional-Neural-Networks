@@ -40,3 +40,34 @@ The fully-connected layers will then perform the same duties found in standard A
 
 ![](https://www.researchgate.net/profile/Holger_Roth/publication/264160750/figure/fig3/AS:296012620025856@1447586316051/The-proposed-convolution-neural-network-consists-of-two-convolutional-layers-max-pooling.png)
 
+## Implementation of Convolutional Neural Network
+
+I will implement the convolutional neural network froms cratch using only basic libraries like numpy(for computational functions), matplotlib(for visualization).<br>
+Although CNNs can now be implemented very easily and effectively using packahes like Keras, Tensorflow, Pytorch..etc.
+
+### Convolution layer
+
+Convolution is a mathematical operation.
+In mathematics (and, in particular, functional analysis) convolution is a mathematical operation on two functions (f and g) to produce a third function that expresses how the shape of one is modified by the other.--WIKI
+
+### Pooling Layer
+![](https://cdn-images-1.medium.com/max/1200/1*q0lk6B6gzvsSQSDn-20zJA.png)
+
+### Fully connected layer
+
+Fully connected layer is same as ANNs. we take the pooled box of values and make it into a single layer of NN.
+
+![](http://www.jpathinformatics.org/articles/2017/8/1/images/JPatholInform_2017_8_1_1_201108_f3.jpg)
+
+Then continue adding new layers of fully connected layer is neeeded , else use the activation to predict the output.
+
+
+### The final Model
+
+The model will look like
+<pre>CONV-->POOL-->CONV--->POOL..........-->CONV-->POOL-->FNN-->ACTIVATION-->PREDICTION</pre>
+CONV- Convolution layer
+POOL - Pooling Layer
+FNN - Fully Connected layer
+
+
